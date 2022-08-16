@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: "games#new"
 
-  get "new", to: "games#new"
+  get "new", to: "games#new", as: :new
   post "score", to: "games#score"
 end
